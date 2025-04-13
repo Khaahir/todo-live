@@ -4,9 +4,11 @@ import Addwork from "./pages/AddWork";
 import Main from "./pages/Main";
 import Admin from "./pages/Admin";
 import Login from "./pages/Login";
+import Mobilenav from "./Components/mobilenav";
 function App() {
   return (
     <Router>
+      <Mobilenav />
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/main" element={<Main />} />

@@ -1,7 +1,12 @@
 import React from "react";
-
+import Navbar from "../Components/navbar";
 function Admin() {
-  return <div>Admin</div>;
+  return (
+    <>
+      <Navbar />
+      <div>Admin</div>;
+    </>
+  );
 }
 
 export default Admin;

@@ -1,20 +1,23 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from "react";
+import { Link } from "react-router-dom";
 
-function Navbar() {
+function Navbar({ className }) {
   return (
     <>
-    <section className='h-[5rem] bg-blue-300 grid grid-cols-8 grid-rows-8 text-white'>
-    <span className='col-start-6 col-end-9 text-3xl row-start-2'>Välkommen {"Användare"}</span>
-    <Link className=' justify-self-center row-start-9' >Lägg till arbete</Link>
-    <Link className=" justify-self-center row-start-9">Inställningar</Link>
-    <Link className=' justify-self-center row-start-9'>Bild-arkiv</Link>
-    <Link className=' justify-self-center row-start-9'>Egen Lista</Link>
+      <section
+        className={`  h-[5rem] bg-blue-300 text-white flex items-center justify-between flex-row-reverse ${className}`}
+      >
+        <span className="mr-4 text-5xl">Välkommen {"Användare"}</span>
 
-
-    </section>
+        <nav className=" ml-4  text-3xl flex gap-14">
+          <Link>Lägg till arbete</Link>
+          <Link>Inställningar</Link>
+          <Link>Bild-arkiv</Link>
+          <Link>Egen Lista</Link>
+        </nav>
+      </section>
     </>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;
