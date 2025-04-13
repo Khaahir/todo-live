@@ -7,7 +7,6 @@ const navslice = createSlice({
   reducers: {
     toggleMenu: (state) => {
       state.isOpen = !state.isOpen;
-      console.log(state.isOpen);
     },
   },
 });

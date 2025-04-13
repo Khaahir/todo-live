@@ -18,7 +18,6 @@ function Mobilenav() {
           <Link to={"/main"} onClick={() => dispatch(toggleMenu())}>
             Att Göra
           </Link>
-          <Link>Egen Lista</Link>
         </nav>
       )}
     </>
