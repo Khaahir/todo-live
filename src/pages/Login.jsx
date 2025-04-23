@@ -29,11 +29,6 @@ function Login() {
               classname={"bg-blue-600 font-extrabold p-2 rounded text-white "}
               children={"Logga in"}
             />
-
-            <Button
-              classname={"bg-blue-600 font-extrabold p-2 rounded text-white"}
-              children={"Skapa Konto"}
-            />
           </div>
         </section>
       </main>

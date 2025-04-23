@@ -24,7 +24,7 @@ function AddWork() {
   const dispatch = useDispatch();
   return (
     <>
-      <section className="bg-gradient-to-r from-blue-500 to-white h-full flex flex-col  ">
+      <section className="bg-gradient-to-r from-blue-500 to-white min-h-screen flex flex-col  ">
         <Button
           children={<img className="h-10" src="src/assets/app.png" alt="" />}
           classname={"mb-5 mt-2 "}

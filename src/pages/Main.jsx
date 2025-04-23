@@ -32,7 +32,6 @@ function Main() {
       const data = await response.json();
       if (data.success) {
         console.log("Todo deleted successfully!");
-        // Remove the deleted todo from the UI state
         setDataTodo((prevData) =>
           prevData.filter((todo) => todo._id !== todoId)
         );
@@ -56,7 +55,7 @@ function Main() {
   };
   return (
     <>
-      <section className="bg-gradient-to-r from-blue-500 to-white h-screen ">
+      <section className="bg-gradient-to-r from-blue-500 to-white min-h-screen ">
         <Button
           children={
             <img
@@ -71,7 +70,7 @@ function Main() {
         <Navbar className={"hidden lg:block"} />
 
         <h1 className="text-4xl font-bold mt-10">Att Göra:</h1>
-        <main className="overflow-y-auto border-2 mx-1 h-[45rem]">
+        <main className=" h-full overflow-y-auto">
           {dataTodo.map((todo) => (
             <div
               key={todo._id}
