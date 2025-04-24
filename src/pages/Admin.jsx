@@ -10,4 +10,3 @@ function Admin() {
 }
 
 export default Admin;
-gGG

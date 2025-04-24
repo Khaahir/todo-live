@@ -30,7 +30,7 @@ function AddWork() {
           classname={"mb-5 mt-2 "}
           onClick={() => dispatch(toggleMenu())}
         />
-        <div className="h-full mx-4 flex flex-col items-center">
+        <div className="h-full mx-4 flex flex-col items-center ">
           <span className="text-3xl font-bold my-4 w">Lägg till arbete</span>
           <div className="flex flex-col bg-white-100 h-[30rem] w-full rounded-2xl ">
             <span className="m-2 font-bold">Uppgift:</span>
@@ -43,12 +43,12 @@ function AddWork() {
                 rows="4"
               />
             </form>
-          </div>
-          <div className="flex gap-4 mt-4 flex-col ">
+          </div >
+         
             <Button
               children={"Lägg till bild"}
               classname={
-                "bg-sky-700 w-screen  font-bold p-1 rounded mb-2 text-white"
+                "bg-sky-700 w-full  font-bold p-1 rounded mb-2 text-white "
               }
             />
             <Button
@@ -58,7 +58,7 @@ function AddWork() {
               }
               children={"lägg till Arbete"}
             />
-          </div>
+          
         </div>
       </section>
     </>
